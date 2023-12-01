@@ -5,7 +5,8 @@ The first thing to do is to get your docker insatlled on your system
 The next step is to get your mage running on dpcker
 
 link -- https://docs.mage.ai/getting-started/setup
-run this on your powershell
+run this on your powershell if you are a window user
+
 -- docker run -it -p 6789:6789 -v ${PWD}:/home/src mageai/mageai /app/run_app.sh mage start [project_name]
 
 Next step 
