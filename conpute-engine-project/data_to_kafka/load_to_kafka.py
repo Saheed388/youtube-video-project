@@ -8,12 +8,10 @@ from confluent_kafka import Producer
 import time
 import logging
 from secret_file import spotify_user_id
-import functions_framework
 
 # Configure logging
 logging.basicConfig(filename='spotify_data.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-@functions_framework.http
 class SaveSongs:
     def __init__(self):
         self.user_id = spotify_user_id
@@ -109,5 +107,4 @@ if __name__ == "__main__":
 
         # Sleep for 3 minutes
         time.sleep(30)
-    if __name__ == "__main__":
-    functions_framework.start()
+    
