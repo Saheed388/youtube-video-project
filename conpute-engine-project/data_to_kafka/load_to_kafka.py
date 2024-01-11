@@ -7,6 +7,7 @@ from refresh_token import Refresh
 from confluent_kafka import Producer
 import time
 import logging
+
 from secret_file import spotify_user_id
 
 # Configure logging
@@ -107,4 +108,3 @@ if __name__ == "__main__":
 
         # Sleep for 3 minutes
         time.sleep(30)
-    

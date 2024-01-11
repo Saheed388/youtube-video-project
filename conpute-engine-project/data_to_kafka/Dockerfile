@@ -2,7 +2,7 @@ FROM python:3.9
 WORKDIR /app
 COPY . /app
 RUN pip install -r requirements.txt
-CMD ["python", "main.py"]
+CMD ["python", "load_to_kafka.py"]
 
 # docker build -t streaming_data:tag .
 
